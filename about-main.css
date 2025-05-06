@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: ambdissolve 5s;
+    
 }
 
 .BlackAMBcontainer {
@@ -50,7 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    
+    animation: ambdissolve 5s;
 
 
 }
@@ -63,9 +63,9 @@ body {
 
 @keyframes ambdissolve {
     
-    100% {opacity: 0;}
-    0% {opacity: 1;}
     
+    0% {opacity: 1;}
+    100% {opacity: 0;}
     
 }
 
