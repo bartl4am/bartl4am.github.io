@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>overlay</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* 🍔 Hamburger button */
+    .menu-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 3;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* 🧊 Fullscreen overlay */
+    .overlay-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #FF3333;
+      background-image: url(media/black&white\ logo.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      z-index: 1000;
+
+    }
+
+    .overlay-menu.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .overlay-menu nav a {
+      color: #ffffff;
+      font-size: 2rem;
+      text-decoration: none;
+      margin: 20px 0;
+      transition: color 0.3s ease;
+    }
+
+    .overlay-menu nav a:hover {
+      color: #000000;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2.5rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🍔 Menu button (top right corner) -->
+<button class="menu-button" id="openMenu">&#9776; 
+</button>
+
+<!-- 🧊 Fullscreen overlay menu -->
+<div class="overlay-menu" id="overlayMenu">
+  <button class="close-button" id="closeMenu">&times;</button>
+  <nav>
+    <a href="aboutscroll.html">about.</a>
+    <a href="project-main.html">projects.</a>
+    <a href="contactopen.html">contact.</a>
+  </nav>
+</div>
+
+<script>
+  const openMenu = document.getElementById('openMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  const overlayMenu = document.getElementById('overlayMenu');
+
+  // 🟢 Show overlay menu
+  openMenu.addEventListener('click', () => {
+    overlayMenu.classList.add('active');
+  });
+
+  // 🔴 Hide overlay menu
+  closeMenu.addEventListener('click', () => {
+    overlayMenu.classList.remove('active');
+  });
+
+  // ⌨️ Close with ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      overlayMenu.classList.remove('active');
+    }
+  });
+</script>
+
+</body>
+</html>

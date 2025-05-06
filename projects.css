@@ -1,0 +1,327 @@
+/*.hidden {
+    display: hidden;
+
+}*/
+
+* {
+    box-sizing: border-box;
+    /* outline: 2px solid cyan; */
+}
+
+body {
+    background-color: #FF3333;
+    display: block;
+    margin: 20px;
+
+}
+
+.hero {
+    /* position: absolute; */
+    width: max-content;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.proj {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proj section {
+
+    width: 400px;
+
+   
+}
+.proj-main {
+
+    /* position: absolute;
+    display: inline-block; */
+    /* width: max-content; */
+    /* display:inline-block; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+
+    
+}
+
+.proj-main nav {
+
+    max-width: 200px;
+}
+
+.proj-main nav img {
+    
+    /* width: 100%;
+    height: auto; */
+
+        transform: rotate(-15deg);
+        width: 100%;
+        
+        /* top: 15px;
+        left: 15px; */
+        /* z-index: 3; */
+        /* background: none;
+        border: none; */
+        cursor: pointer;
+
+        margin-bottom: 50px;
+
+}
+
+.project-card {
+    
+    width: 350px;
+   
+    /* margin: auto; */
+
+}
+
+
+.project {
+
+    display: flex;
+    flex-direction: column;
+    /* margin: 8 40px; */
+    /* justify-content: center; */
+    gap: 100px;
+    margin: 30px;
+   
+}
+
+.project-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+video {
+    width: 75%;
+    height: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.close {
+    float: right;
+    max-width: 30px;
+    margin-bottom: 30px;
+    
+       
+}
+
+h1 {
+    font-family: "peridot-pe-variable", sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+    letter-spacing: 0.2rem;
+    padding-left: 15px;
+    color: white;
+    background-color: black;
+}
+
+h2 {
+    font-family: "peridot-pe-variable", sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
+    letter-spacing: 0.2rem;
+    background-color: white;
+    padding-left: 15px;
+   
+}
+
+
+
+p {
+    color: #FFF;
+    text-align: left;
+    font-family: "Peridot PE Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+
+}
+
+/* .right {
+    color: #FFF;
+    text-align: right;
+    font-family: "Peridot PE Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.left {
+    color: #FFF;
+    text-align: left;
+    font-family: "Peridot PE Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+} */
+
+footer {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+    .project-container {
+
+        flex-direction: column;
+        margin: 40px;
+        
+    }
+
+    .project-container img, .project-container video {
+
+        max-width: 45vw;
+    }
+
+    .project-container:nth-of-type(odd) img, .project-container:nth-of-type(odd) video{
+
+        order: 2;
+    }
+
+    /* .project-container {
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project-container img, .project-container video, .project-container p {
+
+        max-width: 300px;
+    }
+
+    .project-container p:nth-last-of-type(odd) {
+
+        order:;
+    } */
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .project-container {
+
+        flex-direction: row;
+        margin: 40px;
+        
+    }
+
+   
+
+    .project-container p {
+        color: #FFF;
+        text-align: left;
+        font-family: "Peridot PE Variable";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2.6px;
+        padding: 30px;
+        margin: 30px;
+
+
+    }
+
+    .project-container img, .project-container video {
+
+        margin: 20px;
+    }
+
+    footer {
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .project-container {
+
+        flex-direction: row;
+        margin: 40px;
+        
+    }
+
+  
+
+    .project-container p {
+        color: #FFF;
+        text-align: left;
+        font-family: "Peridot PE Variable";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2.6px;
+
+        padding: 30px;
+        margin: 30px;
+
+
+    }
+
+    .img {
+
+        margin: 20px;
+    }
+    
+    footer {
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    
+}
+
+/*ABOUT-MAIN PAGE*/
+

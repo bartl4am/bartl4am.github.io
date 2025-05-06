@@ -1,0 +1,157 @@
+* {
+    
+    box-sizing: border-box; 
+    /* outline: 2px solid white; */
+}
+
+body {
+
+    margin: 0;
+}
+
+nav {
+
+        position: fixed;
+        transform: rotate(-15deg);
+        width: 15%;
+        max-width: 20%;
+        top: 15px;
+        left: 15px;
+        z-index: 3;
+        background: none;
+        border: none;
+        cursor: pointer;
+}
+
+.AMBcontainer {
+
+    /* position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlackAMBcontainer {
+
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    animation: ambdissolve 5s;
+
+
+}
+
+.AMBcontainer img, .BlackAMBcontainer img {
+
+    transform: scale(90%);
+
+}
+
+@keyframes ambdissolve {
+
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+    
+}
+
+img {
+
+    width: 75vw;
+}
+
+
+
+
+/* .logo {
+
+    width: 60vw;
+    max-width: 60vw;
+    display: block;
+    margin: 0 auto;
+} */
+
+h1 {
+
+    color: #000000;
+    text-align: left;
+    font-family: "Peridot PE Variable";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 8px;
+    margin: 20px;
+}
+
+p {
+
+    color: #000000;
+    text-align: left;
+    font-family: "Peridot PE Variable";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 8px;
+    margin: 20px;
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    nav {
+        width: 15%;
+    }
+/* 
+    .AMBcontainer {
+        max-width: 100%;
+        height: auto;
+     } */
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    nav {
+        width: 10%;
+    }
+
+    /* .AMBcontainer {
+        width: 20%;
+        flex-shrink: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    nav {
+        width: 10%;
+    }
+/* 
+    .AMBcontainer{
+        max-width: 20%;
+    } */
+}
