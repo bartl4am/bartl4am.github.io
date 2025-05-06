@@ -23,6 +23,13 @@ body {
 
 }
 
+.close {
+
+    width: max-content;
+    align-self: right;
+    justify-self: right;
+}
+
 .proj {
 
     display: flex;
