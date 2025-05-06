@@ -72,6 +72,8 @@ body {
 img {
 
     width: 75vw;
+    align-items: center;
+    justify-items: center;
 }
 
 
