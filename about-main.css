@@ -70,8 +70,10 @@ body {
 }
 
 .me {
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    flex-wrap: wrap;
 }
 
 
