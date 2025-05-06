@@ -26,8 +26,8 @@ body {
 .close {
 
     width: max-content;
-    align-self: right;
-    justify-self: right;
+    align-self: center;
+    justify-self: center;
 }
 
 .proj {
