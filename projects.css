@@ -25,6 +25,7 @@ body {
 
 .close {
 
+    margin-top: 10px;
     width: max-content;
     align-self: right;
     justify-self: right;
