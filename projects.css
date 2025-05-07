@@ -191,9 +191,9 @@ p {
   width: 100vw;
 }
 
-.social {
-    gap: 10px;
-    margin-right: 20px;
+.social a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* .right {
