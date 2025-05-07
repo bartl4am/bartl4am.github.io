@@ -203,6 +203,7 @@ p {
 }
 .social a {
     text-decoration: none;
+    color: white;
 }
 
 .social a:hover {
