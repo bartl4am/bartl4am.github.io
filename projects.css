@@ -194,6 +194,7 @@ p {
 .contact {
     gap: 15px;
     display: flex;
+    flex-direction: column;
 }
 .social {
     color: #FFF;
