@@ -71,8 +71,8 @@ body {
 
 .me {
     display: flex;
-    justify-content: center; /* centers horizontally */
-    align-items: center;     /* centers vertically */
+    justify-content: center; 
+    align-items: center;     
     flex-wrap: wrap;
 }
 
