@@ -219,12 +219,12 @@ p {
     text-decoration: none;
 }
 
-.envelope {
+.envelope img {
 
     width: 75vw;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 /* .right {
