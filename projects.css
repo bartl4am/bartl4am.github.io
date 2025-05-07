@@ -26,6 +26,13 @@ body {
 .close {
 
     width: max-content;
+    align-self: right;
+    justify-self: right;
+}
+
+.close-hero {
+
+    width: max-content;
     align-self: center;
     justify-self: center;
 }
