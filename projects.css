@@ -221,7 +221,7 @@ p {
 
 .envelope img {
 
-    width: 75vw;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,6 +340,10 @@ footer {
         margin-left: auto;
         margin-right: auto;
        
+    }
+
+    .envelope img {
+        max-width: 50vw;
     }
 
 }
