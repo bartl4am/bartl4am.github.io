@@ -193,6 +193,7 @@ p {
 
 .contact {
     gap: 15px;
+    display: flex;
 }
 .social {
     color: #FFF;
