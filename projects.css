@@ -228,6 +228,10 @@ p {
     margin: auto;
 }
 
+.touch:nth-child(3) {
+    gap: 70px;
+}
+
 /* .right {
     color: #FFF;
     text-align: right;
