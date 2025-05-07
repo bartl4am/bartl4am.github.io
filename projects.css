@@ -366,6 +366,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
+    font-family: "Peridot PE Variable";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,6 +408,11 @@ body {
 
   .overlay-menu nav a:hover {
     color: #000000;
+    font-family: "Peridot PE Variable";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
   }
 
   .close-button {
