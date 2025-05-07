@@ -192,9 +192,10 @@ p {
 }
 
 .contact {
-    gap: 15px;
+    gap: 50px;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 .social {
     color: #FFF;
