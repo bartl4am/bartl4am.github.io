@@ -107,7 +107,7 @@ p {
     color: #000000;
     text-align: left;
     font-family: "Peridot PE Variable";
-    font-size: 18px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -163,6 +163,10 @@ p {
 @media only screen and (min-width: 1200px) {
     nav {
         width: 10%;
+    }
+
+    p {
+        font-size: 18px;
     }
 /* 
     .AMBcontainer{
