@@ -71,5 +71,28 @@
             </a>
         </section>
     </div>
+
+    <script>
+        const openMenu = document.getElementById('openMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const overlayMenu = document.getElementById('overlayMenu');
+      
+        // 🟢 Show overlay menu
+        openMenu.addEventListener('click', () => {
+          overlayMenu.classList.add('active');
+        });
+      
+        // 🔴 Hide overlay menu
+        closeMenu.addEventListener('click', () => {
+          overlayMenu.classList.remove('active');
+        });
+      
+        // ⌨️ Close with ESC
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            overlayMenu.classList.remove('active');
+          }
+        });
+      </script>
 </body>
 </html>
