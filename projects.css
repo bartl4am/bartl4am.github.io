@@ -219,6 +219,13 @@ p {
     text-decoration: none;
 }
 
+.envelope {
+
+    width: 75vw;
+    align-items: center;
+    justify-items: center;
+}
+
 /* .right {
     color: #FFF;
     text-align: right;
