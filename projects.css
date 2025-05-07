@@ -35,6 +35,7 @@ body {
     width: max-content;
     align-self: center;
     justify-self: center;
+    padding-right: 40px;
 }
 
 .proj {
