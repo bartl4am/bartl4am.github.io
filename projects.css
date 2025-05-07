@@ -191,6 +191,9 @@ p {
   width: 100vw;
 }
 
+.contact {
+    gap: 15px;
+}
 .social {
     color: #FFF;
     text-align: left;
@@ -200,6 +203,8 @@ p {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 2.4px;
+
+   
 }
 .social a {
     text-decoration: none;
