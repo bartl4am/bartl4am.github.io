@@ -191,6 +191,11 @@ p {
   width: 100vw;
 }
 
+.social {
+    gap: 10px;
+    margin-right: 20px;
+}
+
 /* .right {
     color: #FFF;
     text-align: right;
