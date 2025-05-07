@@ -60,7 +60,11 @@ body {
     /* width: max-content; */
     /* display:inline-block; */
 
-    display:inline-block;
+    display: flex;
+  justify-content: center; /* centers children horizontally */
+  align-items: center;     /* centers children vertically if needed */
+  position: relative;      /* keep positioning context */
+  width: 100vw;
     
     
 
