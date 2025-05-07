@@ -191,6 +191,16 @@ p {
   width: 100vw;
 }
 
+.social {
+    color: #FFF;
+    text-align: left;
+    font-family: "Peridot PE Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
 .social a {
     text-decoration: none;
 }
