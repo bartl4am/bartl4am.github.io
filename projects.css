@@ -222,6 +222,7 @@ p {
 .envelope {
 
     width: 75vw;
+    display: flex;
     align-items: center;
     justify-items: center;
 }
