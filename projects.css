@@ -191,6 +191,10 @@ p {
   width: 100vw;
 }
 
+.social a {
+    text-decoration: none;
+}
+
 .social a:hover {
     color: white;
     text-decoration: none;
