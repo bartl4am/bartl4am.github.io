@@ -183,6 +183,10 @@ p {
 
 }
 
+.touch {
+    
+}
+
 /* .right {
     color: #FFF;
     text-align: right;
@@ -372,7 +376,7 @@ body {
     background-size: cover;
     color: #ffffff;
     font-family: "Peridot PE Variable";
-    font-size: 18px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
