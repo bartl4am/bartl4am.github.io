@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yours Respectfully</title>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/@fern-solutions/aframe-sky-background/dist/sky-background.umd.min.js"></script>
 </head>
 
 <body>
@@ -25,8 +26,16 @@
             <a-asset-item id="3dyours" src="../assets/src/textures/WALL DESIGNS/3d-yours.gltf"></a-asset-item>
         </a-assets>
         
-      
-        <a-gltf-model src="#3dyours" scale="0.012 0.012 0.012" gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" rotation="0 135 0" position="-1.23847 1.94261 0.04333"></a-gltf-model>
+        <a-sky-background top-color="#0077ff" bottom-color="#ffffff"></a-sky-background>
+        
+     
+   <a-gltf-model 
+   src="#3dyours" 
+   scale="0.012 0.012 0.012" 
+   gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" 
+   rotation="0 135 0" 
+   position="-2.62186 1.94261 0.08806">
+   </a-gltf-model>
 
 
 <!-- lighting -->
@@ -46,17 +55,27 @@
 
 <!-- opening wall -->
         <a-box 
-            width="2.4" 
-            height="3" 
-            depth="0.3" 
-            rotation="0 360 0" 
-            position="-1.50718 1.5 0.22789" 
-            color="brown"
-            material="color: white; src: #openingwall" 
-            static-body="shape: box">
-           
+        width="2.4" 
+        height="3" 
+        depth="0.3" 
+        rotation="0 360 0" 
+        position="-2.9054 1.5 0.22688" 
+        color="#ECE5DC" 
+        static-body="shape: box">
         </a-box>
-             
+        
+<!-- opening wall cover -->
+        <a-plane 
+        width="2.4" 
+        height="3" 
+        depth="0.3" 
+        rotation="0 180 0" 
+        position="-2.89518 1.5 0.07418" 
+        color="brown" 
+        material="color: white; src: #openingwall" 
+        static-body="shape: box">
+        </a-plane>
+
 <!-- glass walls -->
         <a-box  
             height="3" 
@@ -87,7 +106,9 @@
             material="color: white; src: #mycoolwall">
         </a-box>
 
-<!-- biography wall -->
+
+<!-- <a-entity>
+
         <a-box 
         height="3" 
         width="4.6" 
@@ -96,6 +117,28 @@
         geometry="depth: 0.3" 
         material="src: #biographywall">
         </a-box>
+
+
+        <a-plane 
+        height="3" 
+        width="4.6" 
+        rotation="0 90 0" 
+        position="-0.00494 1.5 -1.9233" 
+        material="src: #quotewall">
+        </a-plane>
+</a-entity> -->
+
+<a-entity position="-1.39653 0 0">
+<!-- biography wall -->
+        <a-box height="3" width="4.6" rotation="0 90 0" position="-0.15692 1.5 -1.9233" geometry="depth: 0.3" material="src: #biographywall">
+        </a-box>
+
+<!-- quote wall -->
+
+        <a-plane height="3" width="4.6" rotation="0 90 0" position="-0.00494 1.5 -1.9233" material="src: #quotewall">
+        </a-plane>
+</a-entity>
+
 
 <!-- summary wall -->
         <a-box 
