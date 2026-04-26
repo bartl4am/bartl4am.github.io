@@ -33,11 +33,9 @@
         <a-sky-background top-color="#0077ff" bottom-color="#ffffff"></a-sky-background>
         
      <!-- 3D ASSETS -->
-   <a-gltf-model src="#3dyours" scale="0.012 0.012 0.012" gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" rotation="0 225 0" position="-3.84823 1.94288 -2.11307">
-   </a-gltf-model>
+   <a-gltf-model src="#3dyours" scale="0.012 0.012 0.012" gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" rotation="0 225 0" position="-3.84823 1.94288 -2.10603"></a-gltf-model>
 
-   <a-gltf-model src="#3dmary" scale="0.12 0.12 0.12" gltf-model="../assets/src/textures/GLTF_FILES/Asset 31 (1).gltf"></a-gltf-model>
-
+<a-gltf-model src="#3dmary" scale="0.007 0.007 0.007" gltf-model="../assets/src/textures/GLTF_FILES/Asset 31 (1).gltf" rotation="0 225 0" position="-3.85869 1.7179 -1.38334"></a-gltf-model>
 
 <!-- lighting -->
        <a-light type="ambient" intensity="0.2" light="intensity: 2.08" position="3.06305 1.94581 0.46892"></a-light>
@@ -66,8 +64,8 @@
         
 
 <!-- opening hallway -->
-        <a-plane width="3" height="3" depth="0.3" rotation="0 180 0" position="-5.36923 1.5 -0.80616" color="brown" static-body="shape: box">
-        </a-plane>       
+    <a-plane width="3" height="3" depth="0.3" rotation="0 180 0" position="-4.74545 1.5 -0.70224" static-body="shape: box" material="color: #ffffff" geometry="primitive: box; depth: 0.2; width: 2.19">
+        </a-plane>
 
 
 <!-- opening wall cover -->
@@ -101,49 +99,30 @@
         </a-box>
 
 
-<!-- <a-entity>
-
-        <a-box 
-        height="3" 
-        width="4.6" 
-        rotation="0 90 0" 
-        position="-0.15692 1.5 -1.9233" 
-        geometry="depth: 0.3" 
-        material="src: #biographywall">
-        </a-box>
-
-
-        <a-plane 
-        height="3" 
-        width="4.6" 
-        rotation="0 90 0" 
-        position="-0.00494 1.5 -1.9233" 
-        material="src: #quotewall">
-        </a-plane>
-</a-entity> -->
-
-
-
 <a-entity position="-1.39653 0 0">
 
-<!-- wall -->
- <a-box height="3" width="4.6" rotation="0 360 0" position="-0.15219 1.5 -3.69617" color="white" geometry="depth: 0.2">
-        </a-box>
-        
-<!-- biography wall -->
-       <a-plane height="3" width="4.6" rotation="0 180 0" position="-0.16891 1.5 -3.80019" material="src: #biographywall">
-        </a-plane>
+        <!-- wall -->
+        <a-box height="3" width="4.6" rotation="0 360 0" position="-0.15219 1.5 -3.69617" color="white" geometry="depth: 0.2">
+                </a-box>
+                
+        <!-- biography wall -->
+        <a-plane height="3" width="4.6" rotation="0 180 0" position="-0.16891 1.5 -3.80019" material="src: #biographywall">
+                </a-plane>
 
-<!-- quote wall -->
+        <!-- quote wall -->
 
-        <a-plane height="3" width="4.6" rotation="0 360 0" position="-0.15219 1.5 -3.59196" material="src: #quotewall">
-        </a-plane>
+                <a-plane height="3" width="4.6" rotation="0 360 0" position="-0.15219 1.5 -3.59196" material="src: #quotewall">
+                </a-plane>
          
 </a-entity>
 
 
 <!-- summary wall -->
       <a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="3.34864 1.5 0" material="src: #summarywall" geometry="depth: 0.2">
+        </a-box>
+
+<!--  -->
+<a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.94173 1.5 3.24891" material="color: white" geometry="depth: 0.2; width: 8.09">
         </a-box>
 
 </a-scene>
