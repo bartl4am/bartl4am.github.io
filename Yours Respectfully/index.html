@@ -6,10 +6,19 @@
     <title>Yours Respectfully</title>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
     <script src="https://unpkg.com/@fern-solutions/aframe-sky-background/dist/sky-background.umd.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
 </head>
 
 <body>
 
+        <a-entity id="player" position="0 1.6 0">
+            <!-- camera -->
+            <a-entity id="camera" camera wasd-controls look-controls></a-entity>
+            <!-- hand controls -->
+            <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
+            <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
+        </a-entity>
 
     <a-scene>
         <a-assets>
@@ -162,7 +171,7 @@
 <a-entity>
         <a-box geometry="depth: 0.2; width: 14.6" position="-1.13549 4.499 0" rotation="0 90 0" material="src: #darkwood"></a-box>
          <a-box geometry="depth: 0.2; width: 14.6" position="1.55448 4.499 0" rotation="0 90 0" material="src: #darkwood"></a-box>
-        <a-box geometry="depth: 0.2; width: 14.6" position="-3.62273 4.499 0" rotation="0 90 0" material="src: #darkwood"></a-box>
+        <a-box geometry="depth: 0.2; width: 14.6" position="-3.62273 4.499 0" rotation="0 90 0" material="repeat: 2.58 0.51; src: #darkwood"></a-box>
         
 </a-entity>
 
