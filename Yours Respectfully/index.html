@@ -23,19 +23,28 @@
             <img id="societywall" src="../assets/src/textures/walldesigns-new/popupwalls-06.png" alt="">
             <img id="quotewall" src="../assets/src/textures/WALL DESIGNS/WALL DESIGNS-08.png" alt="">
             <img id="transitionwall" src="../assets/src/textures/walldesigns-new/transitionwalls-08.png" alt="">
+            <img id="backofopening" src="../assets/src/textures/walldesigns-new/backofopening.png" alt="">
             <img id="glass" src="../assets/src/textures/Texturelabs_Glass_154S.jpg" alt="">
             <img id="spatula" src="../assets/src/textures/spatulata-007-taj-mahal-4724-in-architextures.jpg" alt="">
             <a-asset-item id="3dyours" src="../assets/src/textures/WALL DESIGNS/3d-yours.gltf"></a-asset-item>
             <a-asset-item id="3dmary" src="../assets/src/textures/GLTF_FILES/Asset 31 (1).gltf"></a-asset-item>
             <a-asset-item id="3dvindication" src="../assets/src/textures/GLTF_FILES/Asset 93.gltf"></a-asset-item>
+            <a-asset-item id="3dletters" src="../assets/src/textures/GLTF_FILES/Asset 94.gltf"></a-asset-item>
+            <a-asset-item id="3dH" src="../assets/src/textures/GLTF_FILES/Asset 95.gltf"></a-asset-item>
         </a-assets>
         
         <a-sky-background top-color="#0077ff" bottom-color="#ffffff"></a-sky-background>
         
      <!-- 3D ASSETS -->
-   <a-gltf-model src="#3dyours" scale="0.012 0.012 0.012" gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" rotation="0 225 0" position="-3.84823 1.94288 -2.10603"></a-gltf-model>
+        <a-gltf-model src="#3dyours" scale="0.012 0.012 0.012" gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" rotation="0 225 0" position="-3.84823 1.94288 -2.10603"></a-gltf-model>
 
-<a-gltf-model src="#3dmary" scale="0.007 0.007 0.007" gltf-model="../assets/src/textures/GLTF_FILES/Asset 31 (1).gltf" rotation="0 225 0" position="-3.85869 1.7179 -1.38334"></a-gltf-model>
+        <a-gltf-model src="#3dmary" scale="0.007 0.007 0.007" gltf-model="../assets/src/textures/GLTF_FILES/Asset 31 (1).gltf" rotation="0 225 0" position="-3.85869 1.7179 -1.38334"></a-gltf-model>
+
+       <a-gltf-model src="#3dletters" scale="0.078 0.077 0.078" gltf-model="../assets/src/textures/GLTF_FILES/Asset 94.gltf" position="-1.23102 1.48675 7.07541" rotation="0 135 0"></a-gltf-model>
+
+        <a-gltf-model src="#3dletters" scale="0.078 0.077 0.078" gltf-model="../assets/src/textures/GLTF_FILES/Asset 94.gltf" position="-1.34864 1.48675 -7.08347" rotation="0 315 0"></a-gltf-model>
+
+        <a-gltf-model src="#3dH" scale="0.013 0.013 0.013" gltf-model="../assets/src/textures/GLTF_FILES/Asset 95.gltf" position="-3.50767 0.31773 -1.9628" rotation="225 90 90"></a-gltf-model>
 
 <!-- lighting -->
        <a-light type="ambient" intensity="0.2" light="intensity: 2.08" position="3.06305 1.94581 0.46892"></a-light>
@@ -52,6 +61,34 @@
             position="-1.85814 0 0">
         </a-plane>
 
+<!-- ceiling -->
+
+        <!-- glass trim -->
+       <a-box 
+                material="opacity: 0.4; color: white; roughness: 0.35; roughnessTextureRepeat: 0.5 1; src: #glass" 
+                geometry="depth: 0.2; width: 9.1" 
+                position="-1.28498 3.46023 -7.2"
+       ></a-box>
+       <a-box 
+                material="opacity: 0.4; color: white; roughness: 0.35; roughnessTextureRepeat: 0.5 1; src: #glass" geometry="depth: 0.2; width: 9.1" 
+                position="-1.29065 3.501 7.18026"
+        ></a-box>
+       <a-box 
+                material="opacity: 0.4; color: white; roughness: 0.35; roughnessTextureRepeat: 0.5 1; src: #glass" geometry="depth: 0.2; width: 14.6" 
+                position="3.349 3.46 0" 
+                rotation="0 90 0"
+        ></a-box>
+       <a-box 
+                material="opacity: 0.4; color: white; roughness: 0.35; roughnessTextureRepeat: 0.5 1; src: #glass" geometry="depth: 0.2; width: 14.6" 
+                position="-5.942 3.46 0" 
+                rotation="0 90 0"
+        ></a-box>
+
+        <!-- actual ceiling -->
+
+        
+
+
 <!-- opening wall -->
         <a-plane width="3" height="3" depth="0.3" rotation="0 -90 0" position="-3.85671 1.5 -2.28923" color="brown" material="color: white; src: #openingwall" static-body="shape: box">
         </a-plane>
@@ -59,8 +96,8 @@
         <a-box width="3" height="3" depth="0.3" material="color: white" geometry="depth: 0.2" position="-3.74812 1.5 -2.29219" rotation="0 90 0"></a-box>
 
 <!-- behind opening wall -->
-      <a-plane width="3" height="3" depth="0.3" rotation="0 90 0" position="-3.85671 1.5 -2.28923" color="brown" material="color:: white; src: #spatula">
-        </a-plane> 
+      <a-plane width="3" height="3" depth="0.3" rotation="0 90 0" position="-3.63794 1.5 -2.10209" color="brown" material="color: white; src: #backofopening">
+        </a-plane>
         
 
 <!-- opening hallway -->
