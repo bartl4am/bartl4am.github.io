@@ -46,6 +46,8 @@
 
         <a-gltf-model src="#3dH" scale="0.013 0.013 0.013" gltf-model="../assets/src/textures/GLTF_FILES/Asset 95.gltf" position="-3.50767 0.31773 -1.9628" rotation="225 90 90"></a-gltf-model>
 
+        <a-gltf-model src="#3dvindication" scale="0.053 0.053 0.053" gltf-model="../assets/src/textures/GLTF_FILES/Asset 93.gltf" position="3.24608 1.80668 -4.34429" rotation="0 225 0"></a-gltf-model>
+
 <!-- lighting -->
        <a-light type="ambient" intensity="0.2" light="intensity: 2.08" position="3.06305 1.94581 0.46892"></a-light>
 
@@ -85,8 +87,16 @@
         ></a-box>
 
         <!-- actual ceiling -->
+        <a-box geometry="depth: 0.2; width: 9.1" position="-1.29965 4.46441 -7.20262"></a-box>
+        <a-box geometry="depth: 0.2; width: 9.1" position="-1.29965 4.494 7.17925"></a-box>
+        <a-box geometry="depth: 0.2; width: 14.6" position="3.349 4.499 -0.04033" rotation="0 90 0"></a-box>
+        <a-box geometry="depth: 0.2; width: 14.6" position="-5.942 4.499 0" rotation="0 90 0"></a-box>
+       <a-box geometry="depth: 0.2; height: 3.63; width: 9.59" position="-1.28248 6.20817 -5.97022" rotation="45 0 0"></a-box>
+       <a-box geometry="depth: 0.2; height: 3.63; width: 9.59" position="-1.28248 6.208 5.94096" rotation="45 180 0"></a-box>
+      <a-box class="glasswindow1" geometry="depth: 0.2; height: 2.6; width: 9.55" position="-5.94937 6.21794 0" rotation="0 90 0" material="opacity: 0.4; src: #glass"></a-box>
+       <a-box class="glasswindow2" geometry="depth: 0.2; height: 2.6; width: 9.55" position="3.3018 6.21794 0" rotation="0 90 0" material="opacity: 0.4; src: #glass"></a-box>
+       <a-box material="opacity: 0.4; src: #glass" geometry="depth: 0.2; height: 9.42; width: 9.68" position="-1.27675 7.44634 -0.01103" rotation="90 0 0"></a-box>
 
-        
 
 
 <!-- opening wall -->
@@ -159,8 +169,12 @@
         </a-box>
 
 <!--  -->
-<a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.94173 1.5 3.24891" material="color: white" geometry="depth: 0.2; width: 8.09">
-        </a-box>
+
+
+<a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.94173 1.5 3.24891" material="color: white" geometry="depth: 0.2; width: 8.09"></a-box>
+
+<a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.94173 1.5 -5.34807" material="color: white" geometry="depth: 0.2; width: 3.9"></a-box>
+
 
 </a-scene>
 </body>
