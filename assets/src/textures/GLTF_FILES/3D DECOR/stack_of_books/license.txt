@@ -1,0 +1,8 @@
+Model Information:
+* title:	Stack of Books
+* source:	https://sketchfab.com/3d-models/stack-of-books-7683d1d165f74c6f86222532aa974e2c
+* author:	Jackie_is_Backie (https://sketchfab.com/jackie_is_backie)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

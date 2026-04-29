@@ -1,0 +1,8 @@
+Model Information:
+* title:	Vitrine / Mostrador
+* source:	https://sketchfab.com/3d-models/vitrine-mostrador-2d5d7f8e9f434280a9f92121ddbbc3c3
+* author:	Juka (https://sketchfab.com/alejandrojuka3)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

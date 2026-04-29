@@ -1,0 +1,8 @@
+Model Information:
+* title:	Journal
+* source:	https://sketchfab.com/3d-models/journal-1e68473c223f44bfa6a4f2af0f63eea5
+* author:	saltyshiro (https://sketchfab.com/saltyshiro)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

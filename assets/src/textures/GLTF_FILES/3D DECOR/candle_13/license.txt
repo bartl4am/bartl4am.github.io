@@ -1,0 +1,8 @@
+Model Information:
+* title:	Candle 13
+* source:	https://sketchfab.com/3d-models/candle-13-9f4655b978c044d6ba18d4123a7b2caa
+* author:	Prince Obrymec (https://sketchfab.com/prince-obrymec)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
