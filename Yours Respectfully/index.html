@@ -12,17 +12,29 @@
 </head>
 
 <body>
+ <a-scene>
+
+<a-sky-background top-color="#0077ff" bottom-color="#ffffff"></a-sky-background>
 
         <a-entity id="player" position="0 1.6 0" movement-controls="controls: keyboard, touch; speed: 0.3">
+
             <!-- camera -->
             <a-entity id="camera" camera wasd-controls look-controls></a-entity>
             <a-entity camera look-controls position="0 1.6 0"></a-entity>
+
             <!-- hand controls -->
             <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
             <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
         </a-entity>
 
-    <a-scene>
+   
+        <a-assets>
+         <audio id="music" src="../assets/src/audio/music.mp3" preload="auto"></audio>
+        </a-assets>
+
+          <a-sound id="classical" src="#music" position="-1.67108 2.31524 -0.99695" sound="autoplay: true; distanceModel: linear; loop: true; maxDistance: 12; volume: 0.77"></a-sound>
+      <a-camera position="-6.83655 1.19273 -1.79369" rotation="-13.750987083139758 -90 0"></a-camera>
+
         <a-assets>
        
             <img id="darkwood" src="../assets/src/textures/dark_wood_diff_1k.jpg" alt="">
@@ -37,6 +49,7 @@
             <img id="backofopening" src="../assets/src/textures/walldesigns-new/backofopening.png" alt="">
             <img id="glass" src="../assets/src/textures/Texturelabs_Glass_154S.jpg" alt="">
             <img id="spatula" src="../assets/src/textures/spatulata-007-taj-mahal-4724-in-architextures.jpg" alt="">
+            <img id="brick" src="../assets/src/textures/BRICKFORMARY.png" alt="">
             
 
             <a-asset-item id="3dyours" src="../assets/src/textures/WALL DESIGNS/3d-yours.gltf"></a-asset-item>
@@ -72,8 +85,6 @@
 
             <a-asset-item id="candle" src="../assets/src/textures/GLTF_FILES/3D DECOR/candle_13/candle.gltf"></a-asset-item>
 
-            <a-asset-item id="frame3" src="../assets/src/textures/GLTF_FILES/3D DECOR/fancy_victorian_square_picture_frame/frame3.gltf"></a-asset-item>
-
             <a-asset-item id="journal" src="../assets/src/textures/GLTF_FILES/3D DECOR/journal/journal.gltf"></a-asset-item>
 
             <a-asset-item id="papers" src="../assets/src/textures/GLTF_FILES/3D DECOR/old_papers/papers.gltf"></a-asset-item>
@@ -83,7 +94,7 @@
             <a-asset-item id="display" src="../assets/src/textures/GLTF_FILES/3D FURNITURE/vitrine__mostrador/displaycase.gltf"></a-asset-item>
          </a-assets>
         
-        <a-sky-background top-color="#0077ff" bottom-color="#ffffff"></a-sky-background>
+        
         
      <!-- 3D ASSETS -->
         <a-gltf-model src="#3dyours" scale="0.012 0.012 0.012" gltf-model="../assets/src/textures/WALL DESIGNS/3d-yours.gltf" rotation="0 225 0" position="-3.84823 1.94288 -2.10603"></a-gltf-model>
@@ -115,7 +126,7 @@
                 position="-0.68768 0 3.27557">
         </a-gltf-model>
 
-        <a-gltf-model src="#display" gltf-model="../assets/src/textures/GLTF_FILES/3D FURNITURE/vitrine__mostrador/displaycase.gltf" position="-7.33975 0 -0.32864" rotation="0 -90 0"></a-gltf-model>
+        <!-- <a-gltf-model src="#display" gltf-model="../assets/src/textures/GLTF_FILES/3D FURNITURE/vitrine__mostrador/displaycase.gltf" position="-7.33975 0 -0.32864" rotation="0 -90 0"></a-gltf-model> -->
 
 
 
@@ -129,15 +140,14 @@
 
         <a-gltf-model src="#books" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/stack_of_books/books.gltf" scale="0.08 0.08 0.08" position="-0.69999 0.50899 3.27596" rotation="0 90 0"></a-gltf-model>
 
-        <a-gltf-model src="#candle" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/candle_13/candle.gltf"></a-gltf-model>
+      <a-gltf-model src="#candle" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/candle_13/candle.gltf" position="-1.09921 0.55359 3.38693"></a-gltf-model>
 
-        <a-gltf-model src="#frame3" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/fancy_victorian_square_picture_frame/frame3.gltf"></a-gltf-model>
 
-       <a-gltf-model src="#journal" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/journal/journal.gltf" scale="0.025 0.025 0.025" position="-5.28253 0.83225 -0.41511" rotation="0 270 -23.82"></a-gltf-model>
+       <!-- <a-gltf-model src="#journal" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/journal/journal.gltf" scale="0.025 0.025 0.025" position="-5.28253 0.83225 -0.41511" rotation="0 270 -23.82"></a-gltf-model> -->
 
-        <a-gltf-model src="#papers" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/old_papers/papers.gltf"></a-gltf-model>
+        <!-- <a-gltf-model src="#papers" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/old_papers/papers.gltf"></a-gltf-model> -->
 
-        <a-gltf-model src="#clock" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/victorian_clock/scene.gltf"></a-gltf-model>
+        <a-gltf-model src="#clock" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/victorian_clock/scene.gltf" position="-0.29248 0.50559 3.31662" scale="8 8 8" rotation="0 20 0"></a-gltf-model>
 
 
 <!-- lighting -->
@@ -227,43 +237,31 @@
     <a-plane width="3" height="3" depth="0.3" rotation="0 180 0" position="-4.74545 1.5 -0.70224" static-body="shape: box" material="color: #ffffff" geometry="primitive: box; depth: 0.2; width: 2.19">
         </a-plane>
 
+    <a-plane width="3" height="3" depth="0.3" position="-4.74382 1.5 -0.60134" color="brown" material="color: white; src: #backofopening" geometry="width: 2.2">
+        </a-plane>
 
-<!-- opening wall cover -->
-        <!-- <a-plane 
-        width="2.4" 
-        height="3" 
-        depth="0.3" 
-        rotation="0 180 0" 
-        position="-2.89518 1.5 0.07418" 
-        color="brown" 
-        material="color: white; src: #openingwall" 
-        static-body="shape: box">
-        </a-plane> -->
-
-<!-- glass walls -->
-        <!-- <a-box  
-            height="3" 
-            rotation="0 90 0" 
-            position="-3.50011 1.5 -5.61333" 
-            geometry="depth: 0.3; width: 4" 
-            material="color: transparent; src: #glass">
-        </a-box> -->
+        <a-plane width="3" height="3" depth="0.3" position="-4.94573 1.5 -0.80293" color="brown" material="repeat: -0.88 1; color: white; src: #backofopening" geometry="width: 2.2" rotation="0 180 0">
+        </a-plane>
 
 
 <!-- transition wall 1 -->  
        <a-box width="9.1" height="3" depth="0.2" rotation="0 360 0" position="-1.289 1.5 -7.20065" material="color: white; src: #transitionwall">
         </a-box>
 
+       <a-plane material="repeat: 2.69 0.94; roughness: 1; src: #brick" geometry="height: 3; width: 9.5" position="-1.30182 1.48783 -7.30481" rotation="0 180 0"></a-plane>
+
 <!-- transition wall 2 -->  
        <a-box width="9.1" height="3" depth="0.2" rotation="0 180 0" position="-1.289 1.5 7.19653" material="color: white; src: #transitionwall">
         </a-box>
 
+        <a-plane material="repeat: 2.69 0.94; roughness: 1; src: #brick" geometry="height: 3; width: 9.5" position="-1.31182 1.483 7.303"></a-plane>
 
 <a-entity position="-1.39653 0 0">
 
         <!-- wall -->
         <a-box height="3" width="4.6" rotation="0 360 0" position="-0.15219 1.5 -3.69617" color="white" geometry="depth: 0.2">
                 </a-box>
+
                 
         <!-- biography wall -->
         <a-plane height="3" width="4.6" rotation="0 180 0" position="-0.16891 1.5 -3.80019" material="src: #biographywall">
@@ -281,6 +279,8 @@
       <a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="3.34864 1.5 0" material="src: #summarywall" geometry="depth: 0.2">
         </a-box>
 
+      <a-plane material="repeat: 3.76 0.94; roughness: 1; src: #brick" geometry="height: 3; width: 14.6" position="3.45445 1.49208 -0.014" rotation="0 90 0"></a-plane>
+
 <!-- education wall -->
 <a-entity>
         <a-plane width="1" material="src: #educationwall" position="-5.80528 1.57755 5.50968" rotation="0 90 0" scale="1.47 1.4 1.4"></a-plane>
@@ -296,16 +296,25 @@
 </a-entity>
 
 
+<a-entity>
+        <a-plane width="1" material="src: #marriagewall" position="-5.79591 1.64358 0.8411" rotation="0 90 0" scale="1.2 1.2 1.2"></a-plane>
+        
+        <a-gltf-model src="frame1" gltf-model="../assets/src/textures/GLTF_FILES/3D DECOR/fancy_picture_frame_01_1k.gltf/fancy_picture_frame_01_1k.gltf" position="-5.84644 1.6432 0.83845" scale="2.32 3.11 3" rotation="0 90 90"></a-gltf-model>
+</a-entity>
 
-        <a-plane width="1" material="src: #marriagewall"></a-plane>
+<a-entity>
+        <a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.94173 1.5 3.24716" material="color: white" geometry="depth: 0.2; width: 8.09"></a-box>
 
+        <a-plane width="8.09" height="3" rotation="0 90 0" position="-5.83858 1.5 3.24716" material="src: #backofopening"></a-plane>
 
+        <a-plane material="repeat: 2.69 0.94; roughness: 1; src: #brick" geometry="height: 3; width: 3.9" position="-6.03599 1.49025 -5.35496" rotation="0 -90 0"></a-plane>
+</a-entity>
 
+<a-entity>
+        <a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.92383 1.46812 -5.34807" material="color: white" geometry="depth: 0.2; width: 3.9"></a-box>
 
-<a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.94173 1.5 3.24716" material="color: white" geometry="depth: 0.2; width: 8.09"></a-box>
-
-<a-box width="14.6" height="3" depth="2" rotation="0 -90 0" position="-5.92383 1.46812 -5.34807" material="color: white" geometry="depth: 0.2; width: 3.9"></a-box>
-
+        <a-plane material="repeat: 2.69 0.94; roughness: 1; src: #brick" geometry="height: 3; width: 8.09" position="-6.0506 1.48094 3.25583" rotation="0 -90 0"></a-plane>
+</a-entity>
 
 
 </a-scene>
