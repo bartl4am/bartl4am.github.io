@@ -30,7 +30,7 @@
         <a-assets>
          <audio id="music" src="../assets/src/audio/music.mp3" preload="auto"></audio>
         </a-assets>
-       <a-entity id="music-player" sound="src: #music; loop: true; volume: 0.77"></a-entity>
+       <a-entity id="music-player" sound="src: #music; autoplay: true; loop: true; volume: 0.6"></a-entity>
 <script>
   document.body.addEventListener('click', function () {
     const music = document.querySelector('#music-player');
