@@ -21,8 +21,7 @@
       
             <a-entity id="camera" camera wasd-controls look-controls></a-entity>
             <a-entity camera look-controls position="0 1.6 0"></a-entity>
-
-        
+                <a-camera position="-6.83655 1.19273 -1.79369" rotation="-13.750987083139758 -90 0"></a-camera>
             <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
             <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
         </a-entity>
@@ -31,9 +30,13 @@
         <a-assets>
          <audio id="music" src="../assets/src/audio/music.mp3" preload="auto"></audio>
         </a-assets>
-
-          <a-sound id="classical" src="#music" position="-1.67108 2.31524 -0.99695" sound="autoplay: true; distanceModel: linear; loop: true; maxDistance: 12; volume: 0.77"></a-sound>
-      <a-camera position="-6.83655 1.19273 -1.79369" rotation="-13.750987083139758 -90 0"></a-camera>
+       <a-entity id="music-player" sound="src: #music; loop: true; volume: 0.77"></a-entity>
+<script>
+  document.body.addEventListener('click', function () {
+    const music = document.querySelector('#music-player');
+    music.components.sound.playSound();
+  }, { once: true });
+</script>
 
         <a-assets>
        
